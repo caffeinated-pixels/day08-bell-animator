@@ -68,7 +68,7 @@ button:hover {
   background-color: var(--wine-red);
 }
 
-.animate {
+.animate-bell {
   display: inline-block;
   animation-name: ring;
   animation-duration: 1s;
@@ -87,4 +87,11 @@ button:hover {
   75% {
     transform: rotate(45deg);
   }
+}
+
+.animate-tree {
+  display: inline-block;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
 }
