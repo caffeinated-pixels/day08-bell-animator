@@ -9,16 +9,18 @@ stopBtn.addEventListener('click', stop)
 
 function play() {
   audio.play()
-  bellIcon.className = 'animate'
+  bellIcon.style.animationPlayState = 'running'
 }
 
 function pause() {
   audio.pause()
+  bellIcon.style.animationPlayState = 'paused'
 }
 
 function stop() {
   audio.pause()
   audio.currentTime = 0
+  bellIcon.style.animationPlayState = 'paused'
 }
 
 // Task:
