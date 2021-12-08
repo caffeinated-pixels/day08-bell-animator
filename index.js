@@ -3,6 +3,8 @@ const pauseBtn = document.getElementById('pause-btn')
 const stopBtn = document.getElementById('stop-btn')
 const bellIcon = document.getElementById('bell')
 const audio = new Audio('bells.mp3')
+audio.loop = true
+
 playBtn.addEventListener('click', play)
 pauseBtn.addEventListener('click', pause)
 stopBtn.addEventListener('click', stop)
